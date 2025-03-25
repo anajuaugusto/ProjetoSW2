@@ -21,7 +21,7 @@
             <form action="administrador_cadastro.php">
 
                 <p>
-                    Digite o nome do Administrador<br>
+                    Digite o nome do Administrador <br>
                     <input type="text" name="nome" class="form-control">
                 </p>
 
@@ -31,12 +31,12 @@
                 </p>
 
                 <p>
-                    Digite a senha<br>
+                    Digite a sua Senha <br>
                     <input type="password" name="senha" class="form-control">
                 </p>
 
                 <p>
-               
+                
                     <input type="submit" value="cadastrar" class="btn btn-primary">
                     <input type="reset" value="limpar" class="btn btn-success">
                     <a href="index.php" class="btn btn-secondary">Voltar</a>

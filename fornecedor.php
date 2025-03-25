@@ -29,7 +29,7 @@
                 
                     <input type="submit" value="cadastrar fornecedor" class="btn btn-primary">
                     <input type="reset" value="limpar texto" class="btn btn-success">
-                    <a href="fornecedor.php" class="btn btn-secondary">Voltar</a>
+                    <a href="index.php" class="btn btn-secondary">Voltar</a>
                 </p>
 
             </form>

@@ -17,38 +17,35 @@
         <div class="col-sm-8 mx-auto mt-3 border border-primary ">
 
             <h3 class="text-center p-3">Confirmação do Cadastro</h3>
-        
-        <div>
-          <?php
-            $nome = $_REQUEST['nome'];
-            $login = $_REQUEST['login'];
-            $senha = md5( $_REQUEST['senha']);
 
-            echo "Nome do Administrador : $nome <br>
-                  Login: $login <br>
-                  Senha: $senha <br>";
+        <div> 
+            <?php
+                include "conexao.php";
+                $nome = $_REQUEST["nome"];
+                $login = $_REQUEST["login"];
+                $senha = md5( $_REQUEST["senha"]);
 
-                $sql = "insert into administrador(nome,login,senha)
-                        values(:nome, :login, :senha)";
+                echo "Nome do Admnistrador: $nome <br>
+                      Login: $login <br>
+                      Senha: $senha <br>";
 
-                    include "conexao.php";
-                    $result = $conexao->prepare($sql);
-                    $result->bindValue(":nome",$nome);
-                    $result->bindValue(":login",$login);
-                    $result->bindValue(":senha",$senha);
-                    $result->execute();
-                    echo "<p> o Administrador foi cadastrado com sucesso !</p>"
-        ?>
+                $sql = "insert into administrador(nome, login, senha)
+                        values (:nome, :login, :senha)";
+
+            
+                $result = $conexao->prepare("$sql");
+                $result ->bindValue("nome", $nome);
+                $result ->bindValue("login", $login);
+                $result ->bindValue("senha", $senha);
+                $result ->execute();
+                 
+                echo "<p> O administrador foi cadastrado com sucesso ! </p>";
+
+            ?>
         </div>
 
-    </div>
-
-           
-
-    
             </div>
         </div>
     </div>
-
 </body>
 </html>

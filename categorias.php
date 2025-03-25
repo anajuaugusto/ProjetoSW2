@@ -30,7 +30,7 @@
                 
                     <input type="submit" value="cadastre a categoria" class="btn btn-primary">
                     <input type="reset" value="limpar o texto" class="btn btn-success">
-                    <a href="categorias.php" class="btn btn-secondary">Voltar</a>
+                    <a href="index.php" class="btn btn-secondary">Voltar</a>
                 </p>
 
             </form>
