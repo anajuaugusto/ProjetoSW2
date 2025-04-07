@@ -15,7 +15,7 @@
     <div class="container-fluid bg-dark text-white text-center p-5">
         <h1>Projeto SW2</h1>
         <p>
-            Elaborado por Arthur Fellipe Chagas Dionisio
+            Elaborado por Ana Júlia
         </p>
     </div>
 
@@ -82,11 +82,14 @@
                 <p class="text-secondary">
                     Utilize esta opção para visualizar as Vendas
                     realizadas pelos clientes.
+
+                    <div class="col-sm-6">
+                <h1 class="bg-secondary">Forma de Pagamento</h1>
+                <p class="text-secondary">
+                    Utilize esta opção para visualizar as formas de pagamento.
                 </p>
 
-                <p>
-                   <a href="administrador.php" class="btn btn-success">Clique Aqui</a>
-                </p>
+
 
             </div>
         </div>
