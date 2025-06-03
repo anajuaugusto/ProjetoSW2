@@ -1,4 +1,12 @@
-<!DOCTYPE html>
+<?php
+ 
+ session_start();
+
+  if ( !isset($SESSION["nome"]))
+ {
+    header("location:longin.php");
+ }
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
